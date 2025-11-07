@@ -1,0 +1,15 @@
+function [M, F] = mixer(x)
+% Converts motor velocities to physical forces and moments
+% See https://wilselby.com/research/arducopter/controller-design/ for info
+
+
+A = [ K_T,  K_T,   K_T,   K_T;
+      a*K_T, -a*K_T,  a*K_T, -a*K_T;
+     -b*K_T, -b*K_T,  b*K_T,  b*K_T;
+     -K_D,   K_D,   -K_D,   K_D ];
+
+
+
+
+
+end
